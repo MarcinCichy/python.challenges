@@ -21,11 +21,11 @@ def drawn_words (words_list):
 
     words = []
     for i in range (0,len(words_list)):
-        if words_list.index(words_list[i]) < 3:         # lists from 0 to 2 (nouns, verbs, adjectives) need 3 words
+        if words_list.index(words_list[i]) < 3:         # lists from 0 to 2 (nouns, verbs, adjectives) needs 3 words
             for j in range (0,3):
                 word = random.choice(words_list[i])
                 words.append(word)
-        elif words_list.index(words_list[i]) == 3:      # list 3 (prepositions) needs 2 words
+        elif words_list.index(words_list[i]) == 3:      # list 3 (prepositions) need 2 words
             for j in range (0,2):
                 word = random.choice(words_list[i])
                 words.append(word)
