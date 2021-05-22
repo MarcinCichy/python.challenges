@@ -53,10 +53,10 @@ new_list = drawn_words(poem_ingridients)
 
 
 # indefinite article - which one to use
-if new_list[6] != "i" or new_list[6] != "e":
-    start_letter = "A"
-else:
+if new_list[6][0] == "i" or new_list[6][0] == "e":
     start_letter = "An"
+else:
+    start_letter = "A"
 
 
 # write a poem :))))
