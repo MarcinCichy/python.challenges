@@ -11,7 +11,6 @@ pdf_writer = PdfFileWriter()
 list_of_pages = {}
 for page in pdf_reader.pages:
 	text = page.extractText()
-	print(f"Page number {pdf_reader.getPageNumber(page)} with content: {text}, is rotated by {page['/Rotate']} degrees.")
 	index = int(text[0]) - 1
 	if page["/Rotate"] != 0:
 		page.rotateCounterClockwise(page["/Rotate"])
